@@ -35,6 +35,8 @@ export const Desafio2 = () => {
         {pessoas.map((pessoa) => {
           return <p key={pessoa.name + pessoa.age}>{pessoa.name}</p>;
         })}
+        <h3> 4) Soma das idades</h3>
+        {pessoas.reduce((acc, pessoa) => acc + pessoa.age, 0)}
       </Box>
     </Container>
   );
